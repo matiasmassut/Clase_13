@@ -1,5 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background: #ffffff;
+
+    nav {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+    }
 
     li {
         font-family: 'Syne', sans-serif;
@@ -7,6 +20,11 @@ header {
         font-weight: 800;
         color: #1E1E1E;
     }
+
+    .nav-link {
+        color: #1E1E1E;
+    }
+    
 }
 
 main {
@@ -58,5 +76,13 @@ footer {
 
     p {
         color: #ffffff; 
+    }
+}
+/* Desktop-Device */
+
+@media (min-width: 900px) and (max-width: 1920px) {
+    
+    ul {
+        justify-content: end;
     }
 }

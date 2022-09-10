@@ -1,9 +1,19 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 header {
   background: #ffffff; }
+  header nav {
+    display: flex; }
+  header ul {
+    list-style: none; }
   header li {
     font-family: 'Syne', sans-serif;
     font-size: 16px;
     font-weight: 800;
+    color: #1E1E1E; }
+  header .nav-link {
     color: #1E1E1E; }
 
 main .welcome-contact {
@@ -45,3 +55,8 @@ footer {
   padding-bottom: 50px; }
   footer p {
     color: #ffffff; }
+
+/* Desktop-Device */
+@media (min-width: 900px) and (max-width: 1920px) {
+  ul {
+    justify-content: end; } }
